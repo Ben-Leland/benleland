@@ -19,7 +19,7 @@ export default function Home() {
                     <p className="title">FULL-STACK SOFTWARE ENGINEER</p>
                     <div className="home-link-container">
                         <Link to="/contact" className="link-button get-in-touch"> GET IN TOUCH &nbsp;&nbsp; 🡥</Link>
-                        <a href={resume} download className="link-button"> DOWNLOAD RESUME &nbsp;&nbsp; {"\u2B73"}</a>
+                        <a href={resume} download="Ben Leland - Resume.pdf" className="link-button"> DOWNLOAD RESUME &nbsp;&nbsp; {"\u2B73"}</a>
                     </div>
                 </div>
             </div>
