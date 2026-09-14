@@ -1,5 +1,4 @@
 .work-experience {
-    color: #d3d3d3;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@
 
 .work-experience-title {
     font-size: 1.1rem;
-    color: white;
+    color: var(--title-color);
     font-weight: bold;
 }
 

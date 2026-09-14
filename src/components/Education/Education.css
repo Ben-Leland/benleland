@@ -1,6 +1,6 @@
 .education-degree {
     font-size: 1.1rem;
-    color: white;
+    color: var(--title-color);
     font-weight: bold;
 }
 

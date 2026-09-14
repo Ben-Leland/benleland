@@ -21,7 +21,7 @@
 .contact-info {
     margin-top: .3rem;
     margin-bottom: .3rem;
-    color: #d3d3d3;
+    color: var(--body-color);
 }
 
 .contact-link-button {

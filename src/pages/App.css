@@ -2,13 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
 body {
-    color: white;
-    background-color: #212121;
+    color: var(--title-color);
+    background-color: var(--background-color);
     font-family: "Wix Madefor Text", sans-serif;
+    transition: background-color 0.2s ease;
 }
 
 .symbol {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1.4rem;
-    color: #00ff9d;
+    color: var(--accent-color);
+}
+
+:root {
+    --accent-color: #00ff9d;
+}
+
+[data-theme='dark'] {
+    --background-color: #212121;
+    --title-color: white;
+    --body-color: #d3d3d3;
+}
+
+[data-theme='light'] {
+    --background-color: #d3d3d3;
+    --title-color: black;
+    --body-color: #333333;
 }

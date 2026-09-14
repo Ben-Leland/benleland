@@ -1,6 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import "./ThemeSwitch/ThemeSwitch";
+import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,31 +18,35 @@ export default function Navbar() {
                 <NavLink to="/contact" className="link-button nav-get-in-touch">GET IN TOUCH &nbsp;&nbsp; 🡥</NavLink>
             </div>
 
-            <button
-                type="button"
-                className={`hamburger ${isOpen ? "open" : ""}`}
-                onClick={() => setIsOpen(!isOpen)}
-                aria-expanded={isOpen}
-                aria-label="Toggle navigation menu"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
                 <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
                 <NavLink to="/portfolio" onClick={() => setIsOpen(false)}>Portfolio</NavLink>
                 <NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact Me</NavLink>
             </div>
+            <div className={`overlay ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(false)}></div>
 
-            <div className="desktop-menu">
-                <NavLink to="/" className="nav-link">Home</NavLink>
-                <NavLink to="/portfolio" className="nav-link">Portfolio</NavLink>
-                <NavLink to="/contact" className="nav-link">Contact Me</NavLink>
+            <div className="navbar-container-right">
+                <ThemeSwitch></ThemeSwitch>
+
+                <button
+                    type="button"
+                    className={`hamburger ${isOpen ? "open" : ""}`}
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-expanded={isOpen}
+                    aria-label="Toggle navigation menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div className="desktop-menu">
+                    <NavLink to="/" className="nav-link">Home</NavLink>
+                    <NavLink to="/portfolio" className="nav-link">Portfolio</NavLink>
+                    <NavLink to="/contact" className="nav-link">Contact Me</NavLink>
+                </div>
             </div>
 
-            <div className={`overlay ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(false)}></div>
         </nav>
     )
 }
