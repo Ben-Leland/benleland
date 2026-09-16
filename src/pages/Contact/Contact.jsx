@@ -10,8 +10,8 @@ export default function Contact() {
                 <p className="contact-info">(206) 960-6226</p>
                 <p className="contact-info"> Seattle, WA</p>
             </div>
-            <a href="https://www.linkedin.com/in/ben-leland/" target="_blank" rel="noreferrer" className="link-button contact-link-button">LINKEDIN</a>
-            <a href="https://github.com/Ben-Leland" target="_blank" rel="noreferrer" className="link-button contact-link-button">GITHUB</a>
+            <a href="https://www.linkedin.com/in/ben-leland/" target="_blank" rel="noreferrer" className="link-button contact-link-button">LINKEDIN &nbsp;&nbsp; 🡥</a>
+            <a href="https://github.com/Ben-Leland" target="_blank" rel="noreferrer" className="link-button contact-link-button">GITHUB &nbsp;&nbsp; 🡥</a>
         </div>
     )
 }
