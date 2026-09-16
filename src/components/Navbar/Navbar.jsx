@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import "./ThemeSwitch/ThemeSwitch";
-import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
