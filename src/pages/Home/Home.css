@@ -1,10 +1,11 @@
-.container.home {
+.container-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .headshot {
@@ -12,10 +13,6 @@
     height: 8rem;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.container.home div {
-    text-align: center;
 }
 
 .name {
@@ -30,10 +27,6 @@
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     font-weight: bold;
-}
-
-.home p {
-    text-align: center;
 }
 
 .home-link-container {
@@ -61,23 +54,9 @@
     color: black;
 }
 
-.resume {
-    background-color: #2e2e2e;
-    border: white solid 1px;
-    margin-top: .1rem;
-}
-
-.resume a {
-    color: white;
-    text-decoration: none;
-    font-size: .9rem;
-    font-weight: 450;
-}
-
 .section-title {
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
     margin: 0;
 }
 
@@ -88,16 +67,17 @@
     gap: 0.25rem;
 }
 
+.subtitle {
+    margin-bottom: 1.5rem;
+}
+
 .subtitle-group {
     display: flex;
     align-items: center;
 }
 
 .subtitle-group p {
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-top: 2rem;
-    margin-bottom: 5px;
+    margin: 0 4px;
 }
 
 .section-subtitle {
@@ -115,16 +95,20 @@
     margin-bottom: 0.5rem;
 }
 
-.section-linkedin {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
 li::marker {
     color: var(--accent-color);
+}
+
+.component-spacing {
+    margin-bottom: 2rem;
+}
+
+.component-spacing:last-child {
+    margin-bottom: auto;
+}
+
+.subtitle-descriptor {
+    margin: .1rem;
 }
 
 @media (min-width: 768px) {
@@ -143,27 +127,22 @@ li::marker {
 }
 
 @media (min-width: 1024px) {
-    .container.home {
+    .container-home {
         flex-direction: row;
-        justify-content: left;
+        justify-content: flex-start;
         margin-left: 5rem;
         margin-top: 5rem;
     }
 
-    .container.home p {
+    .container-home p {
         text-align: left;
     }
 
-    .container.home ul {
+    .container-home ul {
         text-align: left;
-    }
-    
-    .link-container {
-        border-radius: 0;
     }
 
     .home-link-container {
-        display: flex;
         flex-direction: row;
         gap: 1rem;
     }
@@ -201,11 +180,15 @@ li::marker {
 
     .section-1 {
         width: 50%;
-        align-items: left;
+        align-items: flex-start;
     }
 
     .section-2 {
         align-items: flex-start;
         width: 80%;
+    }
+
+    .component-spacing {
+        width: 100%;
     }
 }

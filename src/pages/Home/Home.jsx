@@ -11,7 +11,7 @@ import resume from "../../../assets/resume.pdf";
 export default function Home() {
     return (
         <div>
-            <div className="container home">
+            <div className="container-home">
                 <img src={headshot} alt="Headshot" className="headshot"></img>
 
                 <div className="home-container-laptop">
@@ -24,13 +24,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="container home">
+            <div className="container-home">
                 <div className="section-1">
                     <p className="section-title"> ABOUT </p>
                 </div>
 
                 <div className="section-2">
-                    <div className="subtitle-group">
+                    <div className="subtitle subtitle-group">
                         <p className="symbol">&lt;&gt;</p>
                         <p className="section-subtitle">Full-Stack Software Engineer</p>
                     </div>
@@ -40,13 +40,13 @@ export default function Home() {
 
             </div>
 
-            <div className="container home">
+            <div className="container-home">
                 <div className="section-1">
                     <p className="section-title"> SKILLS </p>
                 </div>
 
                 <div className="section-2">
-                    <div className="subtitle-group">
+                    <div className="subtitle subtitle-group">
                         <p className="symbol">&lt;&gt;</p>
                         <p className="section-subtitle">Areas of Expertise</p>
                     </div>
@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="container home">
+            <div className="container-home">
                 <div className="section-1">
                     <p className="section-title"> WORK EXPERIENCE </p>
                     
@@ -82,21 +82,24 @@ export default function Home() {
                 
             </div>
 
-            <div className="container home">
+            <div className="container-home">
                 <div className="section-1">
                     <p className="section-title">EDUCATION</p>
 
                 </div>
-
-                {education.map((education) => (
-                    <Education
-                        degree={education.degree}
-                        university={education.university}
-                        location={education.location}
-                        progress={education.progress}
-                        date={education.date}
-                    ></Education>
-                ))}
+                
+                <div className="section-2">
+                    {education.map((education) => (
+                        <Education
+                            degree={education.degree}
+                            university={education.university}
+                            location={education.location}
+                            progress={education.progress}
+                            date={education.date}
+                        ></Education>
+                    ))}
+                </div>
+                
 
             </div>
         </div>

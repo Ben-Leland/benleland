@@ -1,27 +1,3 @@
-.work-experience {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.work-experience p {
-    margin-top: 0;
-    margin-bottom: .5rem;
-}
-
 .work-experience-date {
     font-size: .9rem;
-}
-
-.work-experience-title {
-    font-size: 1.1rem;
-    color: var(--title-color);
-    font-weight: bold;
-}
-
-@media (min-width: 1024px) {
-    .work-experience {
-        align-items: flex-start;
-    }
 }
