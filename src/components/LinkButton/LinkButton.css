@@ -8,16 +8,27 @@
 }
 
 .normal-button {
-    color: white;
     background-color: #2e2e2e;
-    border: white solid 1px;
+    color: var(--title-color);
+    border: var(--body-color) solid 1px;
 }
-
 
 .accent-button {
     background-color: var(--accent-color);
     color: var(--background-color);
-    border: solid var(--accent-color) 1px;
+    border: var(--accent-color) solid 1px;
+}
+
+[data-theme='light'] .normal-button {
+    background-color: var(--dark-accent-color);
+    color: var(--title-color);
+    border: var(--body-color) solid 1px;
+}
+
+[data-theme='light'] .accent-button {
+    background-color: var(--accent-color);
+    color: var(--title-color);
+    border: var(--accent-color) solid 1px;
 }
 
 @media (min-width: 768px) {
@@ -42,5 +53,17 @@
         color: white;
         background-color: #2e2e2e;
         border: white solid 1px;
+    }
+
+    [data-theme='light'] .normal-button:hover {
+        background-color: var(--accent-color);
+        color: var(--title-color);
+        border: var(--accent-color) solid 1px;
+    }
+
+    [data-theme='light'] .accent-button:hover {
+        background-color: var(--dark-accent-color);
+        color: var(--title-color);
+        border: var(--body-color) solid 1px;
     }
 }

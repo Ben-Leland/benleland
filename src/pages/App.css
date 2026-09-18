@@ -16,6 +16,7 @@ body {
 
 :root {
     --accent-color: #00ff9d;
+    --dark-accent-color: #00CA7D;
 }
 
 [data-theme='dark'] {
@@ -29,4 +30,5 @@ body {
     --title-color: black;
     --body-color: #333333;
     --accent-color: #00cc7d;
+    --dark-accent-color: #808080;
 }

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .theme-icon {
@@ -15,6 +15,10 @@
     height: 1.25rem;
     border-radius: 50%;
     margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 [data-theme='dark'] .theme-switch {
@@ -23,6 +27,6 @@
 }
 
 [data-theme='light'] .theme-switch {
-    background: var(--body-color);
+    background: var(--dark-accent-color);
     justify-content: flex-start;
 }
