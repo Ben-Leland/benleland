@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
+import LinkButton from "../LinkButton/LinkButton";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Navbar() {
                     <p className="navName"><strong>BEN LELAND</strong></p>
                 </NavLink>
 
-                <NavLink to="/contact" className="link-button nav-get-in-touch">GET IN TOUCH &nbsp;&nbsp; 🡥</NavLink>
+                <LinkButton type="link" theme="normal-button" address="/contact" text="GET IN TOUCH &nbsp;&nbsp; 🡥"></LinkButton>
             </div>
 
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>

@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
     min-height: 90vh;
+
+    .link-button {
+        margin: .5rem;
+    }
 }
 
 .contact-title {

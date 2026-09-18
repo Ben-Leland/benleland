@@ -4,6 +4,10 @@ nav {
     position: sticky;
     top: 0;
     transition: background-color 0.2s ease;
+
+    .link-button {
+        display: none;
+    }
 }
 
 nav.container {
@@ -105,6 +109,7 @@ nav.container {
     text-decoration: none;
     display: flex;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .nav-link-home .navName {
@@ -117,11 +122,11 @@ nav.container {
 }
 
 @media (min-width: 768px) {
-    .nav-get-in-touch {
-        display: block;
-        margin-top: 0;
-        margin-left: 1rem;
-        width: auto;
+    nav {
+        .link-button {
+            display: block;
+            width: auto;
+        }
     }
 }
 

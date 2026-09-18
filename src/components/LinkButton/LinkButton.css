@@ -1,0 +1,46 @@
+.link-button {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: .75rem;
+    text-align: center;
+    width: 70vw;
+}
+
+.normal-button {
+    color: white;
+    background-color: #2e2e2e;
+    border: white solid 1px;
+}
+
+
+.accent-button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: solid var(--accent-color) 1px;
+}
+
+@media (min-width: 768px) {
+    .link-button {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .link-button {
+        width: auto;
+        border-radius: 0;
+    }
+
+    .normal-button:hover {
+        background-color: var(--accent-color);
+        color: var(--background-color);
+        border: solid var(--accent-color) 1px;
+    }
+
+    .accent-button:hover {
+        color: white;
+        background-color: #2e2e2e;
+        border: white solid 1px;
+    }
+}
