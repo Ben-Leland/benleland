@@ -8,6 +8,10 @@ body {
     transition: background-color 0.2s ease;
 }
 
+p:hover {
+    cursor: default;
+}
+
 .symbol {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1.4rem;
@@ -17,16 +21,19 @@ body {
 :root {
     --accent-color: #00ff9d;
     --dark-accent-color: #00CA7D;
-}
-
-[data-theme='dark'] {
     --background-color: #212121;
+    --lighter-background-color: #2A2A2A;
+    --darker-background-color: #1A1A1A;
+    --secondary-color: #444444;
     --title-color: white;
     --body-color: #d3d3d3;
 }
 
 [data-theme='light'] {
     --background-color: #d3d3d3;
+    --lighter-background-color: #E6E6E6;
+    --darker-background-color: #C3C3C3;
+    --secondary-color: #F0F0F0;
     --title-color: black;
     --body-color: #333333;
     --accent-color: #00cc7d;
