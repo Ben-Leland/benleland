@@ -8,9 +8,6 @@
 .portfolio-top {
     display: flex;
     flex-direction: column;
-    position: sticky;
-    top: 4rem;
-    z-index: 50;
     background-color: var(--background-color);
     padding-top: 1.5rem;
     transition: background-color 0.2s ease;
@@ -75,12 +72,16 @@
     .portfolio {
         flex-direction: row;
     }
-
+    
     .portfolio-top {
         margin-right: 1.5rem;
         align-self: flex-start;
+        position: sticky;
+        z-index: 50;
+        align-self: flex-start;
+        top: 4.5rem;
     }
-
+    
     .portfolio-filter-bar {
         flex-direction: column;
     }
