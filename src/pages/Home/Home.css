@@ -33,6 +33,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .link-button {
+        margin-bottom: .5rem;
+    }
 }
 
 .section-title {

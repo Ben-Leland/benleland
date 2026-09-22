@@ -1,9 +1,10 @@
 nav {
     background-color: var(--background-color);
-    border-bottom: 1px solid var(--body-color);
+    border-bottom: 1px solid var(--secondary-color);
     position: sticky;
     top: 0;
     transition: background-color 0.2s ease;
+    z-index: 100;
 
     .link-button {
         display: none;
@@ -48,9 +49,9 @@ nav.container {
 }
 
 .hamburger span {
-    background-color: var(--body-color);
+    background-color: var(--title-color);
     width: 30px;
-    height: 2px;
+    height: 3px;
 }
 
 .mobile-menu {
@@ -66,7 +67,7 @@ nav.container {
     background-color: var(--background-color);
     transition: right 0.3s ease;
     z-index: 200;
-    border: var(--body-color) solid 1px;
+    border: var(--secondary-color) solid 1px;
     align-items: center;
 }
 

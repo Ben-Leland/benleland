@@ -1,0 +1,22 @@
+.language {
+    background-color: var(--darker-background-color);
+    color: var(--accent-color);
+    font-size: .9rem;
+    border: var(--accent-color) solid 1px;
+    border-radius: 5px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+[data-theme='light'] .language {
+    color: var(--body-color);
+}
+
+@media (min-width: 1024px) {
+    .language {
+        border-radius: 0;
+    }
+}
