@@ -13,7 +13,7 @@ export default function LinkButton({ type, theme, address, text, downloadTitle }
         );
     } else if (type == "download") {
         return (
-            <a href={address} download={downloadTitle} className={`link-button ${theme}`}>{text}</a>
+            <a href={address} className={`link-button ${theme}`} target="_blank" rel="noreferrer">{text}</a>
         );
     }
 }

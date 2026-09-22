@@ -20,7 +20,7 @@ export default function Home() {
                     <p className="title">FULL-STACK SOFTWARE ENGINEER</p>
                     <div className="home-link-container">
                         <LinkButton type="link" theme="accent-button" address="/contact" text="GET IN TOUCH &nbsp;&nbsp; 🡥"></LinkButton>
-                        <LinkButton type="download" theme="normal-button" address={resume} text={`DOWNLOAD RESUME \u00A0\u00A0 \u2B73`} downloadTitle="Ben Leland - Resume.pdf"></LinkButton>
+                        <LinkButton type="download" theme="normal-button" address={resume} text={`RESUME \u00A0\u00A0 \u2B73`} downloadTitle="Ben Leland - Resume.pdf"></LinkButton>
                     </div>
                 </div>
             </div>
