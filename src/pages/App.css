@@ -6,9 +6,6 @@ body {
     background-color: var(--background-color);
     font-family: "Wix Madefor Text", sans-serif;
     transition: background-color 0.2s ease;
-}
-
-p:hover {
     cursor: default;
 }
 
