@@ -5,6 +5,8 @@
     font-size: .75rem;
     text-align: center;
     width: 70vw;
+    display: flex;
+    justify-content: center;
 }
 
 .normal-button {
