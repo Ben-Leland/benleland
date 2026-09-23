@@ -12,8 +12,8 @@ export default function Contact() {
                 <p className="contact-info">(206) 960-6226</p>
                 <p className="contact-info"> Seattle, WA</p>
             </div>
-            <LinkButton type="a" theme="accent-button" address="https://www.linkedin.com/in/ben-leland/" text="LINKEDIN &nbsp;&nbsp; 🡥"></LinkButton>
-            <LinkButton type="a" theme="accent-button" address="https://github.com/Ben-Leland" text="GITHUB &nbsp;&nbsp; 🡥"></LinkButton>
+            <LinkButton type="a" theme="accent-button" address="https://www.linkedin.com/in/ben-leland/" text="LINKEDIN"></LinkButton>
+            <LinkButton type="a" theme="accent-button" address="https://github.com/Ben-Leland" text="GITHUB"></LinkButton>
         </div>
     )
 }

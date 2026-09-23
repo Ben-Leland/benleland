@@ -15,7 +15,7 @@ export default function Navbar() {
                     <p className="navName"><strong>BEN LELAND</strong></p>
                 </NavLink>
 
-                <LinkButton type="link" theme="normal-button" address="/contact" text="GET IN TOUCH &nbsp;&nbsp; 🡥"></LinkButton>
+                <LinkButton type="link" theme="normal-button" address="/contact" text="GET IN TOUCH"></LinkButton>
             </div>
 
             <div className={`mobile-menu ${isOpen ? "open" : ""}`}>

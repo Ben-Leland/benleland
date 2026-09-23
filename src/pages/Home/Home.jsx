@@ -19,8 +19,8 @@ export default function Home() {
                     <p className="name">BEN LELAND</p>
                     <p className="title">FULL-STACK SOFTWARE ENGINEER</p>
                     <div className="home-link-container">
-                        <LinkButton type="link" theme="accent-button" address="/contact" text="GET IN TOUCH &nbsp;&nbsp; 🡥"></LinkButton>
-                        <LinkButton type="download" theme="normal-button" address={resume} text={`RESUME \u00A0\u00A0 \u2B73`} downloadTitle="Ben Leland - Resume.pdf"></LinkButton>
+                        <LinkButton type="link" theme="accent-button" address="/contact" text="GET IN TOUCH"></LinkButton>
+                        <LinkButton type="download" theme="normal-button" address={resume} text={`RESUME`} downloadTitle="Ben Leland - Resume.pdf"></LinkButton>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ export default function Home() {
                         <p className="section-subtitle">Full-Stack Software Engineer</p>
                     </div>
                     <p className="section-body">I am a recent Informatics graduate from the University of Washington with a focus in Data Science and Software Engineering, passionate about building reliable, thoughtful, and impactful technology. I enjoy solving complex technical problems and continuously improving my skills through hands-on development and collaboration.<br></br><br></br> Through coursework, technical projects, and internship experience, I have built a strong foundation in full-stack development and data science while gaining experience solving technical problems in collaborative environments. These experiences strengthened my analytical thinking, adaptability, and interest in building practical, scalable solutions.<br></br><br></br> I am particularly interested in software engineering opportunities where I can contribute to meaningful products, collaborate with experienced teams, and deepen my experience building production ready systems. Going forward, I am excited to continue to grow as an engineer and contribute to products that make a meaningful impact.</p>
-                    <LinkButton type="a" address="https://www.linkedin.com/in/ben-leland/" theme="accent-button" text="LINKEDIN &nbsp;&nbsp; 🡥"></LinkButton>
+                    <LinkButton type="a" address="https://www.linkedin.com/in/ben-leland/" theme="accent-button" text="LINKEDIN"></LinkButton>
                 </div>
 
             </div>
