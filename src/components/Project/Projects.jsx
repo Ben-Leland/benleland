@@ -6,6 +6,6 @@ export const projects = [
         title: "Personal Website",
         description: "My personal portfolio to showcase my skills and host my other projects",
         languages: ["React", "JavaScript", "CSS"],
-        links: ["https://github.com/Ben-Leland/benleland", "https://ben-leland.github.io/benleland/"]
+        links: ["https://github.com/Ben-Leland/benleland", "benjaminleland.com"]
     }
 ];

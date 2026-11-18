@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (_, argv) => {
     const isProd = argv.mode == 'production';
@@ -9,7 +10,8 @@ module.exports = (_, argv) => {
         output: {
             path: path.join(__dirname, '/dist'),
             filename: 'bundle.js',
-            publicPath: isProd ? '/benleland/' : '/'
+            publicPath: '/',
+            clean: true
         },
 
         module: {
@@ -31,7 +33,7 @@ module.exports = (_, argv) => {
                     test: /\.(png|jpe?g|gif|svg|pdf)$/i,
                     type: "asset/resource",
                     generator: {
-                        publicPath: isProd ? '/benleland/' : '/',
+                        publicPath: '/',
                         filename: 'assets/[hash][ext][query]'
                     }
                 }
@@ -61,6 +63,11 @@ module.exports = (_, argv) => {
             // webpack bundles in the body using script tags.
             new HtmlWebpackPlugin({
                 template: './src/index.html'
+            }),
+            new CopyWebpackPlugin({
+                patterns: [
+                    { from: 'CNAME' }
+                ]
             })
         ]
     };
