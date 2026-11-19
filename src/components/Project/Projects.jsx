@@ -5,7 +5,7 @@ export const projects = [
         images: [project1Img1],
         title: "Personal Website",
         description: "My personal portfolio to showcase my skills and host my other projects",
-        languages: ["React", "JavaScript", "CSS"],
+        languages: ["React", "JSX", "CSS"],
         links: ["https://github.com/Ben-Leland/benleland", "benjaminleland.com"]
     }
 ];
